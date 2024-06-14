@@ -6,11 +6,11 @@ local joker = {
 }
 
 joker.localization = {
-    name = "Suspicious Joker",
+    name = "贼心小丑",
     text = {
-        "{C:attention}Downgrades{} played hand",
-        "to gain {X:mult,C:white} X0.5 {} Mult",
-        "{C:inactive}(Currently {X:mult,C:white} X#1# {C:inactive} Mult)"
+        "出牌后，使其牌型{C:attention}降级",
+        "随后本牌获得{X:mult,C:white} X0.5 {}倍率",
+        "{C:inactive}（当前为{X:mult,C:white} X#1# {C:inactive}倍率）"
     }
 }
 

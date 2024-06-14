@@ -17,12 +17,8 @@ blind.localization = {
     }
 }
 
-blind.set_blind = function(self, blind, reset, silent)
-    self.prepped = true
-end
-
 blind.drawn_to_hand = function(self)
-    if G.GAME.current_round.hands_played == self.discards_sub and self.prepped then
+    if self.prepped then
         local available_jokers = {}
         for _, v in ipairs(G.jokers.cards) do
             if not v.ability.rental or (not v.ability.perishable and not v.ability.eternal) then
@@ -50,10 +46,14 @@ blind.drawn_to_hand = function(self)
                 if chosen_sticker == "rental" then chosen_joker:set_rental(true) end
 
                 self:wiggle()
+                G.jokers.cards[1]:juice_up()
             end
         end
-        self.prepped = false
     end
+end
+
+blind.press_play = function(self)
+    self.prepped = true
 end
 
 return blind
