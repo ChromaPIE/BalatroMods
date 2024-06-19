@@ -7,22 +7,7 @@ local blind = {
     debuff = {},
     boss = {min = 2, max = 10},
     boss_colour = HEX('85898C'),
-    loc_txt = {
-        ['default'] = {
-            name = "The Stone",
-            text = {
-                "All Enhanced cards",
-                "are debuffed"
-            }
-        },
-        ['tp'] = {
-            name = "󱥽󱤛",
-            text = {
-                "All Enhanced cards",
-                "are debuffed"
-            }
-        }
-    }
+    loc_txt = {}
 }
 
 blind.debuff_card = function(self, blind, card, from_blind)

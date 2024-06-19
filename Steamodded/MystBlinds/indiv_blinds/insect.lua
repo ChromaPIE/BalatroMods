@@ -7,22 +7,7 @@ local blind = {
     debuff = {},
     boss = {min = 3, max = 10},
     boss_colour = HEX('873E2C'),
-    loc_txt = {
-        ['default'] = {
-            name = "The Insect",
-            text = {
-                "Debuffs leftmost Joker",
-                "every hand"
-            }
-        },
-        ['tp'] = {
-            name = "󱥽󱥑",
-            text = {
-                "Debuffs leftmost Joker",
-                "every hand"
-            }
-        }
-    }
+    loc_txt = {}
 }
 
 blind.press_play = function(self, blind)

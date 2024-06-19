@@ -7,13 +7,7 @@ local blind = {
     debuff = {},
     boss = {showdown = true, min = 10, max = 10},
     boss_colour = HEX('404040'),
-    loc_txt = {
-        name = "Noir Silence",
-        text = {
-            "-4 Hand Size, +1 Hand Size",
-            "after each hand played"
-        }
-    }
+    loc_txt = {}
 }
 
 blind.set_blind = function(self, blind, reset, silent)

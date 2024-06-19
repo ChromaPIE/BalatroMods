@@ -7,22 +7,7 @@ local blind = {
     debuff = {},
     boss = {min = 2, max = 10},
     boss_colour = HEX('3C074D'),
-    loc_txt = {
-        ['default'] = {
-            name = "The Monster",
-            text = {
-                "Destroy all consumables,",
-                "0 consumable slots"
-            }
-        },
-        ['tp'] = {
-            name = "󱥽󱥽",
-            text = {
-                "Destroy all consumables,",
-                "0 consumable slots"
-            }
-        }
-    }
+    loc_txt = {}
 }
 
 

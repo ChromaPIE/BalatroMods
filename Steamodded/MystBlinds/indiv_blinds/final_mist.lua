@@ -7,13 +7,7 @@ local blind = {
     debuff = {},
     boss = {showdown = true, min = 10, max = 10},
     boss_colour = HEX('CA1C1C'),
-    loc_txt = {
-        name = "Scarlet Mist",
-        text = {
-            "Halves Base Mult, sets",
-            "Base Chips to Base Mult"
-        }
-    }
+    loc_txt = {}
 }
 
 blind.modify_hand = function(self, blind, cards, poker_hands, text, mult, hand_chips)

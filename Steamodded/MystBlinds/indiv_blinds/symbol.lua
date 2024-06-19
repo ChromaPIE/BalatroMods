@@ -7,22 +7,7 @@ local blind = {
     debuff = {},
     boss = {min = 4, max = 10},
     boss_colour = HEX('5865F2'),
-    loc_txt = {
-        ['default'] = {
-            name = "The Symbol",
-            text = {
-                "Destroy a random card",
-                "in deck per scored card"
-            }
-        },
-        ['tp'] = {
-            name = "󱥽󱥠",
-            text = {
-                "Destroy a random card",
-                "in deck per scored card"
-            }
-        }
-    }
+    loc_txt = {}
 }
 
 blind.press_play = function(self, blind)

@@ -7,22 +7,7 @@ local blind = {
     debuff = {},
     boss = {min = 4, max = 10},
     boss_colour = HEX('FFEF71'),
-    loc_txt = {
-        ['default'] = {
-            name = "The Center",
-            text = {
-                "Permanent +$1 price per",
-                "unused hand on defeat"
-            }
-        },
-        ['tp'] = {
-            name = "󱥽󱤏",
-            text = {
-                "Permanent +$1 price per",
-                "unused hand on defeat"
-            }
-        }
-    }
+    loc_txt = {}
 }
 
 blind.defeat = function(self, blind)

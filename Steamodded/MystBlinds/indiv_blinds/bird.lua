@@ -7,22 +7,7 @@ local blind = {
     debuff = {},
     boss = {min = 1, max = 10},
     boss_colour = HEX('9CE0F0'),
-    loc_txt = {
-        ['default'] = {
-            name = "The Bird",
-            text = {
-                "Apply a random sticker",
-                "to a Joker every hand"
-            }
-        },
-        ['tp'] = {
-            name = "󱥽󱥴",
-            text = {
-                "Apply a random sticker",
-                "to a Joker every hand"
-            }
-        }
-    }
+    loc_txt = {}
 }
 
 blind.drawn_to_hand = function(self, blind)

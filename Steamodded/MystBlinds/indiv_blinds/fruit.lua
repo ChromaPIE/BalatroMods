@@ -7,22 +7,7 @@ local blind = {
     debuff = {},
     boss = {min = 2, max = 10},
     boss_colour = HEX('E06B3B'),
-    loc_txt = {
-        ['default'] = {
-            name = "The Fruit",
-            text = {
-                "No hands with",
-                "even total ranks"
-            }
-        },
-        ['tp'] = {
-            name = "󱥽󱤚",
-            text = {
-                "No hands with",
-                "even total ranks"
-            }
-        }
-    }
+    loc_txt = {}
 }
 
 blind.debuff_hand = function(self, blind, cards, hand, handname, check)

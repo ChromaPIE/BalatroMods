@@ -7,22 +7,7 @@ local blind = {
     debuff = {},
     boss = {min = 2, max = 10},
     boss_colour = HEX('76C860'),
-    loc_txt = {
-        ['default'] = {
-            name = "The Market",
-            text = {
-                "Lose 25% of scored chips",
-                "after each hand played"
-            }
-        },
-        ['tp'] = {
-            name = "󱥽󱤋",
-            text = {
-                "Lose 25% of scored chips",
-                "after each hand played"
-            }
-        }
-    }
+    loc_txt = {}
 }
 
 blind.set_blind = function(self, blind, reset, silent)
