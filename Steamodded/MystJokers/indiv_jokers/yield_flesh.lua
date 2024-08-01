@@ -7,11 +7,11 @@ local joker = {
 }
 
 joker.localization = {
-    name = "Yield My Flesh",
+    name = "以吾之血肉",
     text = {
-        "{X:mult,C:white} X3 {} Mult after first played",
-        "hand scores less than",
-        "{C:attention}5%{} of required chips"
+        "如果第一次出牌的得分",
+        "小于最低要求的{C:attention}5%",
+        "本回合内{X:mult,C:white} X3 {}倍率"
     }
 }
 
@@ -22,7 +22,7 @@ joker.calculate = function(self, context)
     end
 
     if context.scored_chips and context.after and not context.blueprint then
-        if G.GAME.current_round.hands_played == 0 and context.scored_chips / G.GAME.blind.chips <= 0.05 then
+        if G.GAME.current_round.hands_played == 0 and Bigi(context.scored_chips) / Bigi(G.GAME.blind.chips) <= Bigi(0.05) then
             self.ability.extra.active = true
             return {
                 message = localize('k_active_ex'),

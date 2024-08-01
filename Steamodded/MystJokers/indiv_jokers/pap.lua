@@ -6,12 +6,11 @@ local joker = {
 }
 
 joker.localization = {
-    name = "Pictured as Perfect",
+    name = "人造完美",
     text = {
-        "After playing a hand,",
-        "{C:red}+1{} discard this blind",
-        "After discarding,",
-        "draw {C:attention}three{} extra cards"
+        "出牌后，本盲注内弃牌次数{C:red}+1",
+        "弃牌后，额外抽{C:attention}3{}张牌",
+        "{C:inactive}（选项 + 鸣谢）"
     }
 }
 

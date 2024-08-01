@@ -6,10 +6,10 @@ local joker = {
 }
 
 joker.localization = {
-    name = "Options",
+    name = "选项",
     text = {
-        "After playing a hand,",
-        "draw {C:attention}two{} extra cards"
+        "出牌后",
+        "额外抽{C:attention}2{}张牌"
     }
 }
 

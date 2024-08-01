@@ -6,10 +6,9 @@ local joker = {
 }
 
 joker.localization = {
-    name = "Credits",
+    name = "鸣谢",
     text = {
-        "After discarding,",
-        "draw {C:attention}two{} extra cards"
+        "弃牌后额外抽{C:attention}2{}张牌"
     }
 }
 
